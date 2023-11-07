@@ -2,6 +2,9 @@
 body {
   width: 1440px;
   height: 2844px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
 }
 
 header {
@@ -10,10 +13,10 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 92px 50px;
+  margin: 92px auto;
 }
 
-nav {
+.header_nav {
   display: flex;
   width: 388px;
   height: 23px;
@@ -24,32 +27,27 @@ nav {
   list-style-type: circle;
 }
 
-.main {
+.main,
+.view_lots,
+.auction,
+.number,
+.email,
+address {
   font-family: Raleway;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
 }
 
-.view_lots {
-  font-family: Raleway;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  text-decoration: underline;
-}
-
+.view_lots,
 .auction {
-  font-family: Raleway;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
   text-decoration: underline;
 }
 
 .log_black {
   width: 148px;
   height: 105px;
+  margin-right: 11%;
 }
 
 ol {
@@ -61,48 +59,32 @@ ol {
   height: 97px;
 }
 
-.number {
-  font-family: Raleway;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 135%;
-  text-decoration: underline;
-}
-
+.number,
 .email {
-  font-family: Raleway;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 135%;
   text-decoration: underline;
 }
 
+.number,
+.email,
 address {
-  font-family: Raleway;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 135%;
+  line-height: 24.3px; /* 135% */
 }
 
 .jambotron {
   width: 1440px;
-  height: 757px;
+  height: 755px;
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
-  background-size: 1400px 700px;
+  background-size: 100% 100%;
   display: flex;
-  margin-bottom: 180px;
+  flex-direction: column;
+  margin-bottom: 95px;
+  box-sizing: border-box;
 }
 
 .title {
-  width: 100%;
-  height: 355px;
-  display: flex;
-  background-color: black;
-  margin: 165px 50px 0 50px;
+  margin: 166px 50px 0 50px;
+  flex-direction: column;
 }
 
 .text_log {
@@ -111,9 +93,35 @@ address {
   font-size: 100px;
   font-style: normal;
   font-weight: 700;
-  line-height: 115%; /* 115px */
+  line-height: 120%; /* 120px */
   letter-spacing: 30px;
   text-transform: uppercase;
+}
+
+.text_log_fr {
+  display: flex;
+  justify-content: center;
+}
+
+.text_log_sc {
+  display: flex;
+  justify-content: end;
+}
+
+.space {
+  letter-spacing: 60px;
+}
+
+.space_off {
+  letter-spacing: 0;
+}
+
+.footer_jambotron {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: end;
+  justify-content: end;
 }
 
 .subline {
@@ -125,6 +133,16 @@ address {
   font-weight: 400;
   line-height: 28px; /* 127.273% */
   text-transform: uppercase;
+  word-spacing: 19px;
+}
+
+.footer_jambotron_text {
+  margin-bottom: 62px;
+  padding-right: 78px;
+}
+
+.footer_jambotron_butt {
+  margin: 0 50px 50px 0;
 }
 
 .bet {
@@ -141,16 +159,21 @@ button {
   font-weight: 400;
   line-height: normal;
   text-transform: uppercase;
+  background: transparent;
+  padding: 11px 32px;
+  border: 1px solid #fff;
 }
 
 section {
   width: 1340px;
   height: 579px;
-  margin-bottom: 181px;
-  margin-left: 50px;
+  column-gap: 181px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
 }
 
-h1 {
+.lot_title {
   margin-left: 40px;
   margin-bottom: 27px;
   color: #000;
@@ -169,8 +192,7 @@ h1 {
   justify-content: space-between;
 }
 
-.lot_fr {
-  background-image: url(../images/card-lot-01.jpg);
+.all_lot {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -180,32 +202,18 @@ h1 {
   flex-direction: column;
   justify-content: space-between;
   padding: 50px 40px 50px 40px;
+}
+
+.lot_fr {
+  background-image: url(../images/card-lot-01.jpg);
 }
 
 .lot_sc {
   background-image: url(../images/card-lot-02.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 430px;
-  height: 450px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 50px 40px 50px 40px;
 }
 
 .lot_th {
   background-image: url(../images/card-lot-03.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 430px;
-  height: 450px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 50px 40px 50px 40px;
 }
 
 .card_title {
@@ -244,11 +252,11 @@ h1 {
   width: 1340px;
   height: 487px;
   display: flex;
-  background-color: antiquewhite;
-  margin-left: 50px;
+  margin: auto;
+  row-gap: 180px;
 }
+
 .about_column {
-  
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -261,6 +269,7 @@ h1 {
   padding: 0px 95px;
   justify-content: center;
   align-items: center;
+  margin-right: 25px;
 }
 
 .about_logo_image {
@@ -271,12 +280,9 @@ h1 {
   padding: 63px 46px;
 }
 
-.about_text {
-  width: 800px;
-  height: 388px;
-  display: inline-flex;
-  padding-bottom: 0px;
-  flex-direction: column;
+.about_column {
+  display: flex;
+  justify-content: end;
 }
 
 .about_title {
@@ -287,6 +293,50 @@ h1 {
   font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
+  padding-bottom: 100px;
 }
 
+.about_text {
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
 
+.about_text_fr {
+  display: flex;
+  margin-top: 25px;
+}
+
+footer {
+  width: 1340px;
+  height: 97px;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  row-gap: 90px;
+}
+
+.footer_contacts {
+  width: 240px;
+  height: 97px;
+}
+
+.footer_nov {
+  width: 150px;
+  height: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  left: 20px;
+}
+
+.footer_loga {
+  width: 280px;
+  height: 48px;
+  display: flex;
+  position: relative;
+  left: 20px;
+}

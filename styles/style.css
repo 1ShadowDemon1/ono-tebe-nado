@@ -40,15 +40,20 @@ address {
   font-weight: 400;
 }
 
-.view_lots,
-.auction {
-  text-decoration: underline;
+.main {
+  text-decoration: none;
 }
 
 .log_black {
   width: 148px;
   height: 105px;
   margin-right: 11%;
+  display: inline-block;
+  background-color: #eee;
+}
+
+.log_black:hover {
+  background-color: #332525;
 }
 
 ol {

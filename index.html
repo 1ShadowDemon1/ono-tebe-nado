@@ -12,29 +12,33 @@
   <body>
     <header>
       <nav class="header_nav">
-        <a class="main"> главная </a>
+        <a class="main" href="#main"> главная </a>
         <ol>
           <li class="table_marker">
-            <a class="view_lots"> посмотреть лоты </a>
+            <a class="view_lots" href="#lots"> посмотреть лоты </a>
           </li>
         </ol>
         <ol>
           <li class="table_marker">
-            <a class="auction"> об аукционе </a>
+            <a class="auction" href="#about"> об аукционе </a>
           </li>
         </ol>
       </nav>
-      <img class="log_black" src="./images/logo-black.svg" alt="Черный логотип" />
+       <div class="log_black">
+         <img src="./images/logo-black.svg" alt="Черный логотип" />
+       </div>
       <aside class="contacts">
         <a class="number" href="tel:+99995555555">+9 999 555 5555</a>
         <a class="email" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
         <address>наб. Принсенграхт 263-265, Амстердам</address>
       </aside>
     </header>
-    <main class="jambo_main">
+    <main class="jambo_main" id="main">
       <div class="overlay">
         <div class="title">
-          <h1 class="text_log"> о<span class="space">но</span><span class="text_log text_log_fr">те<span class="space">бе</span></span><span class="text_log text_log_sc"><span class="space">н</span>ад<span class="space_off">о</span></span><h1>
+          <h1 class="text_log">о<span class="space">но</span></h1>
+          <h1 class="text_log text_log text_log_fr">те<span class="space">бе</span></h1>
+          <h1 class="text_log text_log text_log_sc"><span class="space">н</span>ад<span class="space_off">о</span></h1>
         </div>
         <div class="footer_jambotron">
           <div class="footer_jambotron_text">
@@ -46,7 +50,7 @@
         </div>
       </div>
     </main>
-    <section>
+    <section id="lots">
       <h1 class="lot_title">лоты</h1>
       <div class="lots">
         <div class="lot_fr all_lot">
@@ -76,7 +80,7 @@
       </div>
       <a class="more">посмотреть больше</a>
     </section>
-    <div class="about">
+    <div class="about" id="about">
         <div class="about_logo">
           <div class="about_logo_image">
             <img src="./images/logo-white.svg" alt="Белый логотип">
@@ -97,9 +101,9 @@
             <address>наб. Принсенграхт 263-265, Амстердам</address>
       </aside>
       <nav class="footer_nov">
-        <a class="main"> главная </a>
-        <a class="view_lots"> посмотреть лоты </a>
-        <a class="auction"> об аукционе </a>
+        <a class="main" href="#main"> главная </a>
+        <a class="view_lots" href="#lots"> посмотреть лоты </a>
+        <a class="auction" href="#about"> об аукционе </a>
       </nav>
       <div class="footer_loga">
         <img class="footer_img" src="./images/yt.svg" alt="Ютуб">

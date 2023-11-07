@@ -279,6 +279,7 @@ section {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  justify-content: end;
 }
 
 .about_logo {
@@ -297,11 +298,6 @@ section {
   height: 240px;
   width: 240px;
   padding: 63px 46px;
-}
-
-.about_column {
-  display: flex;
-  justify-content: end;
 }
 
 .about_title {

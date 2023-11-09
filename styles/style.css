@@ -1,27 +1,29 @@
 /* место для вашего кода */
-body {
-  width: 100%; /*1440px*/
-  height: 100%; /*2844px*/
+.body_main {
+  max-width: 1440px;
   display: flex;
   flex-direction: column;
   margin: auto;
 }
 
-header {
+.header_main {
   width: 100%; /*1440px*/
-  height: 3,8%; /*109px*/
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: auto;
-  padding: 95px 56px;
+  padding: 100px 50px 95px;
 }
 
-.header_nav {
+.header_list {
   display: flex;
-  width: 388px;
-  height: 23px;
   justify-content: space-between;
+  max-width: 388px;
+  width: 100%;
+}
+
+.padding_space {
+  margin-left: 32px;
 }
 
 .table_marker {
@@ -38,10 +40,11 @@ address {
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
+  text-decoration: none;
 }
 
-.main {
-  text-decoration: none;
+.underline {
+  border-bottom: #000 solid 1px;
 }
 
 .log_black {
@@ -56,18 +59,13 @@ address {
   background-color: #332525;
 }
 
-ol {
+.li_style {
   list-style-type: none;
 }
 
 .contacts {
-  width: 240px;
-  height: 97px;
-}
-
-.number,
-.email {
-  text-decoration: underline;
+  max-width: 240px;
+  width: 100%;
 }
 
 .number,
@@ -78,10 +76,10 @@ address {
 
 .jambo_main {
   width: 100%;
-  height: 755px;
+  min-height: 755px;
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-position: center;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
@@ -133,10 +131,9 @@ address {
 .footer_jambotron {
   display: flex;
   width: 100%;
-  height: 30%;
   align-items: end;
   justify-content: end;
-  padding-right: 8px;
+  margin-top: 126px;
 }
 
 .subline {
@@ -149,23 +146,11 @@ address {
   line-height: 28px; /* 127.273% */
   text-transform: uppercase;
   word-spacing: 18px;
-}
-
-.footer_jambotron_text {
   margin-bottom: 62px;
   padding-right: 78px;
 }
 
-.footer_jambotron_butt {
-  margin: 0 50px 50px 0;
-}
-
-.bet {
-  width: 257px;
-  height: 52px;
-}
-
-button {
+.jambo_butt {
   color: #fff;
   text-align: center;
   font-family: Raleway;
@@ -177,17 +162,17 @@ button {
   background: transparent;
   padding: 13px 32px 11px;
   border: 1px solid #fff;
+  margin: 0 50px 50px 0;
 }
 
-section {
+.sec_lots {
   width: 100%;
-  height: 579px;
   display: flex;
   flex-direction: column;
   margin: auto;
   margin-bottom: 180px;
   margin-top: 180px;
-  padding: 0 57px;
+  padding: 0 50px;
 }
 
 .lot_title {
@@ -246,9 +231,12 @@ section {
   font-style: normal;
   font-weight: 700;
   line-height: 120%; /* 26.4px */
-  text-decoration-line: underline;
   text-transform: uppercase;
   z-index: 1;
+}
+
+.underline_title {
+  border-bottom: #fff solid;
 }
 
 .card_text {
@@ -268,15 +256,13 @@ section {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  text-decoration: underline;
 }
 
 .about {
   width: 100%;
-  height: 487px;
   display: flex;
   margin: auto;
-  padding: 0 57px;
+  padding: 0 50px;
   margin-bottom: 180px;
 }
 
@@ -285,6 +271,7 @@ section {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: end;
+  margin-top: 100px;
 }
 
 .about_logo {
@@ -326,38 +313,40 @@ section {
 
 .about_text_fr {
   display: flex;
-  margin-top: 25px;
+  margin-top: 30px;
 }
 
-footer {
+.footer_main {
   width: 100%;
-  height: 97px;
   display: flex;
   margin: auto;
   justify-content: space-between;
   margin-bottom: 90px;
-  padding: 0 57px;
+  padding: 0 50px;
 }
 
 .footer_contacts {
-  width: 240px;
-  height: 97px;
+  max-width: 240px;
+  width: 100%;
 }
 
-.footer_nov {
-  width: 150px;
-  height: 64px;
+.footer_list {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 150px;
+  width: 100%;
   position: relative;
-  left: 20px;
+}
+
+.footer_loga_list {
+  width: 50px;
+  height: 50px;
+  display: flex;
 }
 
 .footer_loga {
-  width: 280px;
-  height: 48px;
+  width: 240px;
   display: flex;
-  position: relative;
-  left: 20px;
+  justify-content: space-between;
 }

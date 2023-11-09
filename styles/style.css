@@ -80,6 +80,7 @@ address {
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
@@ -91,7 +92,6 @@ address {
   width: inherit;
   height: inherit;
   background-color: rgb(0 0 0 /0.6);
-  z-index: 2;
 }
 
 .title {
